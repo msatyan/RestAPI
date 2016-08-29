@@ -1,0 +1,9 @@
+MyAspCoreRestAPI/.vs
+MyAspCoreRestAPI/src/MyAspCoreRestAPI/bin
+MyAspCoreRestAPI/src/MyAspCoreRestAPI/obj
+
+#IDE configuration files
+.idea
+.vscode
+*.iml
+
