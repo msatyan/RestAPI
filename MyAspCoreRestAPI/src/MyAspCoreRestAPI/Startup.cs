@@ -29,6 +29,8 @@ namespace MyAspCoreRestAPI
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +40,14 @@ namespace MyAspCoreRestAPI
             loggerFactory.AddDebug();
 
             app.UseMvc();
+
+            //app.UseSwaggerGen();
+            app.UseSwagger();
+
+            // Try the swagger UI endpoint .../swagger/ui/
+            // Eg: http://localhost:61306/swagger/ui
+            // Also check for .../swagger/v1/swagger.json
+            app.UseSwaggerUi(); 
         }
     }
 }
