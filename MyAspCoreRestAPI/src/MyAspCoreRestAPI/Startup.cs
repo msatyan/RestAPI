@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MyAspCoreRestAPI.Services;
 
 namespace MyAspCoreRestAPI
 {
@@ -29,6 +27,9 @@ namespace MyAspCoreRestAPI
         {
             // Add framework services.
             services.AddMvc();
+
+            // Register Service by using dependency injection
+            services.AddSingleton<IMyProductsRepository, InMemMyProductsRepository>();
 
             services.AddSwaggerGen();
         }

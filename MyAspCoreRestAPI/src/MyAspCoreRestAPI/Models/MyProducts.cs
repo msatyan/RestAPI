@@ -2,7 +2,7 @@
 
 namespace MyAspCoreRestAPI.Models
 {
-    public class MyProductsInfo
+    public class MyProducts
     {
         public int Id { get; set; }
 
