@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-using MyAspCoreRestAPI.Models;
-using MyAspCoreRestAPI.Services;
+using MyRestAPI.Models;
+using MyRestAPI.Services;
 
-namespace MyAspCoreRestAPI.Controllers
+namespace MyRestAPI.Controllers
 {
     [Route("api/[controller]")]
     public class MyProductsController : Controller

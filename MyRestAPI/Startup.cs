@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MyAspCoreRestAPI.Services;
+using MyRestAPI.Services;
 
-namespace MyAspCoreRestAPI
+namespace MyRestAPI
 {
     public class Startup
     {

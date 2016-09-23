@@ -4,7 +4,7 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 
-namespace MyAspCoreRestAPI
+namespace MyRestAPI
 {
     public class Program
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MyAspCoreRestAPI.Models;
+using MyRestAPI.Models;
 
-namespace MyAspCoreRestAPI.Services
+namespace MyRestAPI.Services
 {
     public class InMemMyProductsRepository : IMyProductsRepository
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MyAspCoreRestAPI.Models
+namespace MyRestAPI.Models
 {
     public class MyProducts
     {

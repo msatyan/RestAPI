@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MyAspCoreRestAPI.Models;
+using MyRestAPI.Models;
 
-namespace MyAspCoreRestAPI.Services
+namespace MyRestAPI.Services
 {
     public interface IMyProductsRepository
     {
