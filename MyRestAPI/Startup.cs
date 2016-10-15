@@ -6,6 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MyRestAPI.Services;
 
+using MyAspCoreRestAPI.MyMiddlewareExtensions;
+
 namespace MyRestAPI
 {
     public class Startup
@@ -39,6 +41,8 @@ namespace MyRestAPI
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            app.UseMySample1Middleware();
 
             app.UseMvc();
 
