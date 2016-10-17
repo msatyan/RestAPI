@@ -10,7 +10,7 @@ using MyAspCoreRestAPI.MyMiddlewareExtensions;
 
 namespace MyRestAPI
 {
-    public class Startup
+    public partial class Startup
     {
         public Startup(IHostingEnvironment env)
         {
@@ -42,6 +42,7 @@ namespace MyRestAPI
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            ConfigureAuth(app);
             app.UseMySample1Middleware();
 
             app.UseMvc();

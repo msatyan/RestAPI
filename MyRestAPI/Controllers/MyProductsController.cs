@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 using MyRestAPI.Models;
 using MyRestAPI.Services;
 
+
 namespace MyRestAPI.Controllers
 {
+    
     [Route("api/[controller]")]
     public class MyProductsController : Controller
     {
@@ -26,6 +29,7 @@ namespace MyRestAPI.Controllers
             return products;
         }
 
+        [Authorize]
         // SELECT ONE
         // GET api/myproducts/3
         [HttpGet("{id:int}")] // added validation (id should be int)

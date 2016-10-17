@@ -1,0 +1,41 @@
+﻿
+swagger API: 
+.../swagger/ui/
+Also check for .../swagger/v1/swagger.json
+
+
+To get token: 
+POST .../api/token
+
+Content-Type: application/x-www-form-urlencoded
+username=MyUser1&password=MyUserPwd
+
+eg:
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json" -d 'username=MyUser1&password=MyUserPwd' "http://localhost:61306/api/token"
+
+
+GET
+====
+../api/MyProducts
+
+GET with id (testing only added [Authorize])
+===========
+Call GET with Hedder "Authorization: Bearer <token>"
+../api/MyProducts/{id}
+
+Eg:
+curl -X GET -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNeVVzZXIxIiwianRpIjoiNTAxOTNlOWItM2QyYy00YzAwLWFjYTctZTBlNzc4NDZjODI0IiwiaWF0IjoxNDc2NjY3MDk1LCJuYmYiOjE0NzY2NjcwOTQsImV4cCI6MTQ3NjY2NzM5NCwiaXNzIjoiRXhhbXBsZUlzc3VlciIsImF1ZCI6IkV4YW1wbGVBdWRpZW5jZSJ9.e-J_tm8TLdzJRYaACmNvh7j7iOsXVUeNykWPNKT_qsM" "http://localhost:61306/api/myproducts/3"
+
+
+
+Good Articles 
+==============
+Simple Token Provider Middleware for ASP.NET
+https://github.com/nbarbettini/SimpleTokenProvider
+
+Token Authentication in ASP.NET Core
+https://stormpath.com/blog/token-authentication-asp-net-core
+
+Token Authentication: The Secret to Scalable User Management
+https://stormpath.com/blog/token-authentication-scalable-user-mgmt
+
