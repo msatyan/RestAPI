@@ -12,6 +12,7 @@ namespace MyRestAPI
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
+                //.UseUrls("http://localhost:5009")
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()

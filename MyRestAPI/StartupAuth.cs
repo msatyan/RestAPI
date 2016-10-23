@@ -74,7 +74,8 @@ namespace MyRestAPI
         private Task<ClaimsIdentity> GetIdentity(string username, string password)
         {
             // Don't do this in production, obviously!
-            if (username == "MyUser1" && password == "MyUserPwd")
+            //if (username == "MyUser1" && password == "MyUserPwd")
+            if (username == password)
             {
                 return Task.FromResult(new ClaimsIdentity(new GenericIdentity(username, "Token"), new Claim[] { }));
             }
