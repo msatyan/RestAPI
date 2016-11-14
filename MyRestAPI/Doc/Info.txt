@@ -1,4 +1,10 @@
-﻿
+﻿// A request to http://<app>/ will serve the default file (say index.html)  from wwwroot 
+//eg: http://localhost:61306
+
+// A request to http://<app>/StaticFiles/index.html will serve the index.html file from StaticFiles.
+//eg: http://localhost:61306/StaticFiles/index.html
+
+
 swagger API: 
 .../swagger/ui/
 Also check for .../swagger/v1/swagger.json

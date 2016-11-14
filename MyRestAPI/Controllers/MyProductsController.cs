@@ -29,6 +29,9 @@ namespace MyRestAPI.Controllers
             return products;
         }
 
+
+        // If you want to apply constrains to attribute route
+        // Google it for ASP.NET MVC Attribute Routing Constrains.
         [Authorize]
         // SELECT ONE
         // GET api/myproducts/3
