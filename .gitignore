@@ -1,7 +1,7 @@
 
 #IDE configuration files
 .idea
-.vscode
+#.vscode
 *.iml
 
 ## Ignore Visual Studio temporary files, build results, and
