@@ -3,6 +3,7 @@
 
 // A request to http://<app>/StaticFiles/index.html will serve the index.html file from StaticFiles.
 //eg: http://localhost:61306/StaticFiles/index.html
+//eg: http://localhost:61306/StaticFiles/MyRsaSamples/MyJsRsaSample.html
 
 
 swagger API: 

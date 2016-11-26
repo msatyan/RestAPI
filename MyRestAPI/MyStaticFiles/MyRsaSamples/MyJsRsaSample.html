@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>My JS RSA Sample</title>
+
+    <link rel="stylesheet" href="../css/MyApiTest1.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.0.0-alpha.5/css/bootstrap.css"/>
+
+    <!-- crypto -->
+    <script type="text/javascript" src="../MsrCrypto.1.4/msrcrypto.js"></script>
+    <script type="text/javascript" src="MyJsRsaSample.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        </br>
+        <h1 class="title">My JS RSA Sample</h1>
+        </br>
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" type="button" 
+                            onclick="onEncryptButtonClick();"> Encrypt
+                        </button>
+                    </span>
+
+                    <input type="text" id="TextArea_PlainText" class="form-control" 
+                    placeholder="The sample text for encryption, edit me..." 
+                    value="The sample text for encryption, edit me...">
+                </div>
+
+                
+                <div class="my-bd-callout my-bd-callout-warning">
+                    <h6>Encrypted value (this will change with each encryption)</h6>
+                    <p id="EncryptedHexValue">Click Encrypt Button to encript the value</p>
+                </div>
+
+                <div class="my-bd-callout my-bd-callout-info">
+                    <h6>Decrypted Plain Text is:</h6>
+                    <p id="DecryptedPlainText"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
